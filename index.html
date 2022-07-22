@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=====font-awesom-link=====-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--=====google-font-link=====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--=====css link=====-->
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/js-styles.css" />
+    <title>Admin dashboard</title>
+  </head>
+  <body>
+    <!--========THE DASHBOARD CONTAINER STARTS========-->
+    <div class="container">
+      <!--========left aside bar starts========-->
+      <aside>
+        <!--===logo div===-->
+        <div class="top">
+          <div class="logo">
+            <img src="images/logo.jpg" alt="" />
+            <h2><span class="danger">E</span>UROCLYDON</h2>
+          </div>
+
+          <!--===close button div===-->
+          <div class="close">
+            <span class="fa fa-times sidebarClose" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!--===side bar===-->
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="fa fa-tachometer" aria-hidden="true"></span>
+            <h3>Dashboard</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-users" aria-hidden="true"></span>
+            <h3>Customers</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+            <h3>Orders</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-line-chart" aria-hidden="true"></span>
+            <h3>Analytics</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-envelope" aria-hidden="true"></span>
+            <h3>Messages</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-calendar-check-o" aria-hidden="true"></span>
+            <h3>Products</h3>
+            <span class="message-count">26</span>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-book" aria-hidden="true"></span>
+            <h3>Reports</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-cogs" aria-hidden="true"></span>
+            <h3>Settings</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+            <h3>Add Product</h3>
+          </a>
+
+          <a href="#">
+            <span class="fa fa-sign-out" aria-hidden="true"></span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!--=== left aside bar ends===-->
+
+      <!--===middle content starts===-->
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="date">
+          <input type="date" name="##" id="" />
+        </div>
+        <!--===insights starts===-->
+        <div class="insights">
+          <!--==sales ends===-->
+          <div class="sales">
+            <span class="fa fa-bar-chart" aria-hidden="true"></span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$67,890</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>89%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+          <!--==sales ends===-->
+
+          <!--==expenses ends===-->
+          <div class="expenses">
+            <span class="fa fa-bar-chart" aria-hidden="true"></span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>$17,308</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>74%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+          <!--==expenses ends===-->
+
+          <!--==incoome starts===-->
+          <div class="income">
+            <span class="fa fa-bar-chart" aria-hidden="true"></span>
+            <div class="middle">
+              <div class="left">
+                <h3>Income</h3>
+                <h1>$111,560</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>91%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+          <!--==income ends===-->
+        </div>
+        <!--===insights starts===-->
+
+        <!--===orders starts-->
+        <div class="recent-orders">
+          <h2>Recent Orders</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Python for everybody</td>
+                <td>45332</td>
+                <td>Due</td>
+                <td class="warnig">pending</td>
+                <td>details</td>
+              </tr>
+
+              <tr>
+                <td>Python for everybody</td>
+                <td>45332</td>
+                <td>Due</td>
+                <td class="warnig">pending</td>
+                <td>details</td>
+              </tr>
+
+              <tr>
+                <td>Python for everybody</td>
+                <td>45332</td>
+                <td>Due</td>
+                <td class="warnig">pending</td>
+                <td>details</td>
+              </tr>
+
+              <tr>
+                <td>Python for everybody</td>
+                <td>45332</td>
+                <td>Due</td>
+                <td class="warnig">pending</td>
+                <td>details</td>
+              </tr>
+
+              <tr>
+                <td>Python for everybody</td>
+                <td>45332</td>
+                <td>Due</td>
+                <td class="warnig">pending</td>
+                <td>details</td>
+              </tr>
+
+              <tr>
+                <td>Python for everybody</td>
+                <td>45332</td>
+                <td>Due</td>
+                <td class="warnig">pending</td>
+                <td>details</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="" class="primary">Show All</a>
+        </div>
+
+        <!--===orders ends-->
+      </main>
+      <!--===middle content ends===-->
+
+      <div class="right">
+        <!--===top start===-->
+        <div class="top">
+          <span class="fa fa-bars sidebarOpen" aria-hidden="true"></span>
+
+          <div class="theme-toggler">
+            <span class="fa fa-moon-o moon" aria-hidden="true"></span>
+            <span class="fa fa-sun-o sun" aria-hidden="true"></span>
+          </div>
+
+          <div class="profile">
+            <div class="info">
+              <p>Hey <b>Roman</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="images/profile-1.jpeg" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+        <!--===top end===-->
+
+        <!--===recent updates starts==-->
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-2.jpeg" alt="profile" />
+              </div>
+              <div class="message">
+                <p><b>Lesnar</b> recieved his order of python for everybody</p>
+                <small class="text-muted">2 minutes ago</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-3.jpeg" alt="profile" />
+              </div>
+              <div class="message">
+                <p><b>Rollins</b> recieved his order of python for everybody</p>
+                <small class="text-muted">2 minutes ago</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-4.jpeg" alt="profile" />
+              </div>
+              <div class="message">
+                <p><b>Rock</b> recieved his order of python for everybody</p>
+                <small class="text-muted">2 minutes ago</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-5.jpeg" alt="profile" />
+              </div>
+              <div class="message">
+                <p><b>Becky</b> recieved his order of python for everybody</p>
+                <small class="text-muted">2 minutes ago</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile-6.jpeg" alt="profile" />
+              </div>
+              <div class="message">
+                <p><b>Rousey</b> recieved his order of python for everybody</p>
+                <small class="text-muted">2 minutes ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--===recent updates ends===-->
+
+        <!--===sales analytics starts===-->
+        <div class="sales-analytics">
+          <h2>Sales Analystics</h2>
+          <div class="item online">
+            <div class="icon">
+              <span class="fa fa-shopping-cart" aria-hidden="true"></span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ONLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+56%</h5>
+              <h3>4564</h3>
+            </div>
+          </div>
+
+          <div class="item offline">
+            <div class="icon">
+              <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>OFFLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="danger">-24%</h5>
+              <h3>1125</h3>
+            </div>
+          </div>
+
+          <div class="item customers">
+            <div class="icon">
+              <span class="fa fa-user" aria-hidden="true"></span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>NEW CUSTOMERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+56%</h5>
+              <h3>4564</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <div>
+              <span class="fa fa-plus"></span>
+              <h3>Add Product</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--===sales analytics ends===-->
+      </div>
+    </div>
+
+    <!--========THE DASHBOARD CONTAINER ENDS========-->
+
+    <!--=========javascript link=========-->
+    <script src="js/index.js"></script>
+    <script src="js/orders.js"></script>
+  </body>
+</html>
